@@ -14,22 +14,13 @@ const Header = () => {
 
     const navigation = [
         { name: 'Our Services', href: '/our-services' },
-        { name: 'About Us', href: '/about-us' },
+        { name: 'About Us', href: '/about' },
         { name: 'Our Approach', href: '/our-approach' },
         { name: 'Projects', href: '/projects' },
         { name: 'Memberships', href: '/memberships' },
         { name: 'Sustainability', href: '/sustainability' },
-        { name: 'Contact Us', href: '/contact-us' },
+        { name: 'Contact Us', href: '/contact' },
     ];
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 10);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     const isActive = (href: string) => {
         return pathname === href;

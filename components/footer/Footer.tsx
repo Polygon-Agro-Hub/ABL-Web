@@ -78,7 +78,7 @@ const Footer = () => {
                 </svg>
             </div>
 
-            <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-4">
+            <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* Left Section - Logo and Company Info */}
