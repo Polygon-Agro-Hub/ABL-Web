@@ -94,7 +94,7 @@ const Footer = () => {
                                     className="object-contain"
                                 />
                             </div>
-                            <h2 className="text-2xl font-bold">Agro Benefit Lanka Pvt Ltd</h2>
+                            <h2 className="text-2xl font-bold mb-2">Agro Benefit Lanka Pvt Ltd</h2>
                         </div>
 
                         {/* Company Description */}

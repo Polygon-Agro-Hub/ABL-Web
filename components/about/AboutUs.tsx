@@ -2,8 +2,8 @@ const AboutUs = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="flex flex-col items-center text-center mt-16 px-6">
-        <h1 className="text-4xl text-black font-medium mb-8">About Us</h1>
+      <section className="flex flex-col items-center text-center mt-16">
+        <h1 className="text-4xl text-black font-medium mb-8 sm:mb-12">About Us</h1>
 
         {/* Main Content */}
         <div className="max-w-7xl mx-auto text-[#53595E] leading-relaxed">

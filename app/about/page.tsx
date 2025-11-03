@@ -9,13 +9,17 @@ import VisionMission from "@/components/about/VisionMission";
 export default function AboutUsPage() {
     return (
         <div className="flex flex-col my-18 mx-auto gap-20">
-            <AboutUs />
-            <VisionMission />
-            <OurObjectives />
+            <div className="flex flex-col px-6 gap-20">
+                <AboutUs />
+                <VisionMission />
+                <OurObjectives />
+            </div>
             <ValuesWeProvide />
-            <OurBoardOfDirectors />
-            <OurManagementTeam />
-            <OurOperationalTeam />
+            <div className="flex flex-col px-6 gap-20">
+                <OurBoardOfDirectors />
+                <OurManagementTeam />
+                <OurOperationalTeam />
+            </div>
         </div>
-    )
+    );
 }

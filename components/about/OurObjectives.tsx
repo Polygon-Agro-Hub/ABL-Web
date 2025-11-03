@@ -23,7 +23,7 @@ const OurObjectives = () => {
     ];
 
     return (
-        <section className="flex flex-col items-center text-center px-6">
+        <section className="flex flex-col items-center text-center">
             <h1 className="text-4xl text-black font-medium mb-8">Our Objectives</h1>
 
             <div className="grid md:grid-cols-2 gap-10 justify-items-center max-w-7xl">

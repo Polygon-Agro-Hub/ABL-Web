@@ -22,7 +22,7 @@ const OurManagementTeam = () => {
 
     return (
         <section className="bg-white text-center">
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-7xl mx-auto">
                 <div className="flex items-center justify-center mb-12">
                     <div className="w-full h-0.5 bg-[#E2E2EB]" ></div>
                     <h1 className="text-4xl font-medium text-black mx-4 whitespace-nowrap">

@@ -2,7 +2,7 @@ const VisionMission = () => {
     return (
         <div className="bg-white">
             {/* Hero Section */}
-            <section className="text-center px-6">
+            <section className="text-center">
                 <div className="max-w-7xl mx-auto text-[#53595E]">
                     {/* Vision and Mission Section */}
                     <div className="grid md:grid-cols-2 gap-12">
