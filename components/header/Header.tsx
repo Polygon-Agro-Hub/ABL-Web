@@ -14,7 +14,7 @@ const Header = () => {
 
     const navigation = [
         { name: 'Our Services', href: '/our-services' },
-        { name: 'About Us', href: '/about' },
+        { name: 'About Us', href: '/about-us' },
         { name: 'Our Approach', href: '/our-approach' },
         { name: 'Projects', href: '/projects' },
         { name: 'Memberships', href: '/memberships' },
@@ -33,7 +33,7 @@ const Header = () => {
                 : 'bg-white shadow-md py-4'
                 }`}
         >
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="container mx-auto px-4 sm:px-8">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <div className="">
@@ -56,7 +56,7 @@ const Header = () => {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className={`font-medium transition-colors relative group px-2 py-1 ${isActive(item.href)
+                                className={`font-medium transition-colors relative group py-1 ${isActive(item.href)
                                     ? 'text-(--color-primary)'
                                     : 'text-[#737F88] hover:text-(--color-primary)'
                                     }`}

@@ -1,10 +1,10 @@
-import AboutUs from "@/components/about/AboutUs";
-import OurBoardOfDirectors from "@/components/about/OurBoardOfDirectors";
-import OurManagementTeam from "@/components/about/OurManagementTeam";
-import OurObjectives from "@/components/about/OurObjectives";
-import OurOperationalTeam from "@/components/about/OurOperationalTeam";
-import ValuesWeProvide from "@/components/about/ValuesWeProvide";
-import VisionMission from "@/components/about/VisionMission";
+import AboutUs from "@/components/about-us/AboutUs";
+import OurBoardOfDirectors from "@/components/about-us/OurBoardOfDirectors";
+import OurManagementTeam from "@/components/about-us/OurManagementTeam";
+import OurObjectives from "@/components/about-us/OurObjectives";
+import OurOperationalTeam from "@/components/about-us/OurOperationalTeam";
+import ValuesWeProvide from "@/components/about-us/ValuesWeProvide";
+import VisionMission from "@/components/about-us/VisionMission";
 
 export default function AboutUsPage() {
     return (
