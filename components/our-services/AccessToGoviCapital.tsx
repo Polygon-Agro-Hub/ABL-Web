@@ -1,6 +1,6 @@
 const AccessToGoviCapital = () => {
   return (
-    <div className="bg-[#F6F8FD] py-16">
+    <div className="bg-white py-16">
       {/* Hero Section */}
       <section className="flex flex-col items-center text-center px-6">
         <h1 className="text-4xl text-black font-medium mb-4">
