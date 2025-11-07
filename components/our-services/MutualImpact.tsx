@@ -8,7 +8,7 @@ const MutualImpact = () => {
   ];
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-10">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Title */}
         <h2 className="text-2xl sm:text-3xl font-semibold text-black mb-3">

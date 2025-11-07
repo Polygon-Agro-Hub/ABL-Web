@@ -2,7 +2,7 @@ import Image from "next/image";
 import partner1 from "@/assets/our-services/logo/govicare.png";
 import partner2 from "@/assets/our-services/logo/govimart.png";
 
-const OurFinancialPartners = () => {
+const OurFinancialPartnersPC = () => {
   const cards1 = [
     { bg: "#D9D9D9", logo: partner1, offset: "translate-y-0" },
     { bg: "#D9D9D9", logo: partner2, offset: "translate-y-15" },
@@ -38,7 +38,7 @@ const OurFinancialPartners = () => {
   ];
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-20 hidden md:block">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Title */}
         <h2 className="text-3xl sm:text-4xl font-semibold text-black mb-3">
@@ -62,7 +62,7 @@ const OurFinancialPartners = () => {
           {cards1.map((card, index) => (
             <div
               key={index}
-              className={`w-full h-24 sm:w-full sm:h-36 rounded-xl flex items-center justify-center transition-transform duration-300 ${card.offset}`}
+              className={`w-full h-24 lg:w-full lg:h-36 rounded-xl flex items-center justify-center transition-transform duration-300 ${card.offset}`}
               style={{ backgroundColor: card.bg }}
             >
               {card.logo && (
@@ -79,7 +79,7 @@ const OurFinancialPartners = () => {
           {cards2.map((card, index) => (
             <div
               key={index}
-              className={`w-full h-24 sm:w-full sm:h-36 rounded-xl flex items-center justify-center transition-transform duration-300 ${card.offset}`}
+              className={`w-full h-24 lg:w-full lg:h-36 rounded-xl flex items-center justify-center transition-transform duration-300 ${card.offset}`}
               style={{ backgroundColor: card.bg }}
             >
               {card.logo && (
@@ -96,7 +96,7 @@ const OurFinancialPartners = () => {
           {cards3.map((card, index) => (
             <div
               key={index}
-              className={`w-full h-24 sm:w-full sm:h-36 rounded-xl flex items-center justify-center transition-transform duration-300 ${card.offset}`}
+              className={`w-full h-24 lg:w-full lg:h-36 rounded-xl flex items-center justify-center transition-transform duration-300 ${card.offset}`}
               style={{ backgroundColor: card.bg }}
             >
               {card.logo && (
@@ -114,4 +114,4 @@ const OurFinancialPartners = () => {
   );
 };
 
-export default OurFinancialPartners;
+export default OurFinancialPartnersPC;

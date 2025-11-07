@@ -38,7 +38,7 @@ const ValuesWeProvide = () => {
         </h1>
 
         {/* First row: 3 cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-10 px-6 sm:px-0 ">
+        <div className="grid md:grid-cols-3 gap-8 mb-10 px-6 lg:px-0 ">
           {values.slice(0, 3).map((item, index) => (
             <div
               key={index}
@@ -58,7 +58,7 @@ const ValuesWeProvide = () => {
         </div>
 
         {/* Second row: 2 cards centered */}
-        <div className="flex flex-wrap justify-center gap-8 px-6 sm:px-0">
+        <div className="flex flex-wrap justify-center gap-8 px-6 lg:px-0">
           {values.slice(3).map((item, index) => (
             <div
               key={index}

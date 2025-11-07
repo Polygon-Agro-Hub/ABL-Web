@@ -50,7 +50,7 @@ const WhoCanJoin = () => {
         </h1>
 
         {/* First Row: 2 Cards */}
-        <div className="grid md:grid-cols-2 gap-8 mb-10 px-6 sm:px-0">
+        <div className="grid md:grid-cols-2 gap-8 mb-10 px-6 lg:px-0">
           {values.slice(0, 2).map((item, index) => (
             <div
               key={index}

@@ -24,11 +24,11 @@ const OurManagementTeam = () => {
     <section className="bg-white text-center">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-center mb-12">
-          <div className="w-full h-0.5 bg-[#E2E2EB]"></div>
-          <h1 className="text-4xl font-medium text-black mx-4 whitespace-nowrap">
+          <div className="hidden md:block w-full h-0.5 bg-[#E2E2EB]"></div>
+          <h1 className="text-3xl sm:text-4xl font-medium text-black mx-4 whitespace-nowrap">
             Our Operational Team
           </h1>
-          <div className="w-full h-0.5 bg-[#E2E2EB]"></div>
+          <div className="hidden md:block w-full h-0.5 bg-[#E2E2EB]"></div>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
