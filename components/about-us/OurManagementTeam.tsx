@@ -26,7 +26,7 @@ const OurManagementTeam = () => {
         <div className="flex items-center justify-center mb-12">
           <div className="hidden md:block w-full h-0.5 bg-[#E2E2EB]"></div>
           <h1 className="text-3xl sm:text-4xl font-medium text-black mx-4 whitespace-nowrap">
-            Our Operational Team
+            Our Management Team
           </h1>
           <div className="hidden md:block w-full h-0.5 bg-[#E2E2EB]"></div>
         </div>

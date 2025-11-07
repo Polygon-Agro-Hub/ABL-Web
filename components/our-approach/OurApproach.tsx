@@ -16,7 +16,7 @@ const OurApproach = () => {
             <Image
               src={approachImg}
               alt="Agro Benefit Lanka - Empowering Farmers"
-              className="rounded-2xl shadow-md object-cover w-full "
+              className="object-cover w-full"
             />
           </div>
 
