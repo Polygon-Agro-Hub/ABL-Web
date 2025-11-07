@@ -17,7 +17,7 @@ const AccessToGoviMart = () => {
 
         <button
           className="flex items-center gap-2 my-8 px-8 py-2 font-medium rounded-full transition-colors duration-300 
-             hover:bg-[#F12672] hover:text-white border border-[#F40064] text-[#F40064] bg-white"
+             hover:bg-[#F12672] hover:text-white border border-(--color-primary) text-(--color-primary) bg-white"
         >
           Open GoViMart
           <svg
@@ -52,14 +52,14 @@ const AccessToGoviMart = () => {
           <div>
             {/* Header with Icon */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 flex items-center justify-center bg-[#F40064] rounded-lg shadow-md">
+              <div className="w-12 h-12 flex items-center justify-center bg-(--color-primary) rounded-lg shadow-md">
                 <FaBell className="w-6 h-6 text-white" />
               </div>
               <h2 className="text-2xl font-semibold text-black">What?</h2>
             </div>
 
             {/* Card */}
-            <div className="rounded-l-2xl border-l-4 border-[#F40064]">
+            <div className="rounded-l-2xl border-l-4 border-(--color-primary)">
               <div className="pl-6 pr-4 py-4 text-justify">
                 GOVIMART is Sri Lanka’s first large-scale digital marketplace
                 dedicated exclusively to agriculture. It is a platform built to
@@ -77,14 +77,14 @@ const AccessToGoviMart = () => {
           <div>
             {/* Header with Icon */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 flex items-center justify-center bg-[#F40064] rounded-lg shadow-md">
+              <div className="w-12 h-12 flex items-center justify-center bg-(--color-primary) rounded-lg shadow-md">
                 <MdOutlineQuestionMark className="w-6 h-6 text-white" />
               </div>
               <h2 className="text-2xl font-semibold text-black">Why?</h2>
             </div>
 
             {/* Card */}
-            <div className="rounded-l-2xl border-l-4 border-[#F40064]">
+            <div className="rounded-l-2xl border-l-4 border-(--color-primary)">
               <div className="pl-6 pr-4 py-4 text-justify">
                 For decades, farmers have been caught in a cycle of unfair
                 pricing, heavy reliance on middlemen, and limited bargaining
@@ -127,14 +127,14 @@ const AccessToGoviMart = () => {
           <div>
             {/* Header with Icon */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 flex items-center justify-center bg-[#F40064] rounded-lg shadow-md">
+              <div className="w-12 h-12 flex items-center justify-center bg-(--color-primary) rounded-lg shadow-md">
                 <FaLightbulb className="w-6 h-6 text-white" />
               </div>
               <h2 className="text-2xl font-semibold text-black">How?</h2>
             </div>
 
             {/* Card */}
-            <div className="rounded-l-2xl border-l-4 border-[#F40064]">
+            <div className="rounded-l-2xl border-l-4 border-(--color-primary)">
               <ul className="pl-8 pr-6 py-4 space-y-3 text-justify list-disc">
                 <li>
                   We provide all the fresh agri products on your screen through
@@ -169,14 +169,14 @@ const AccessToGoviMart = () => {
           <div>
             {/* Header with Icon */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 flex items-center justify-center bg-[#F40064] rounded-lg shadow-md">
+              <div className="w-12 h-12 flex items-center justify-center bg-(--color-primary) rounded-lg shadow-md">
                 <FaTrophy className="w-6 h-6 text-white" />
               </div>
               <h2 className="text-2xl font-semibold text-black">What Gains?</h2>
             </div>
 
             {/* Card */}
-            <div className="rounded-l-2xl border-l-4 border-[#F40064]">
+            <div className="rounded-l-2xl border-l-4 border-(--color-primary)">
               <ol className="pl-8 pr-6 py-4 space-y-4 text-justify list-decimal ">
                 <li>
                   Farmers gain fairer prices, wider market reach, reduced

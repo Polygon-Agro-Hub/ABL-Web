@@ -42,14 +42,14 @@ const AccessToGoviCare = () => {
           <div>
             {/* Header with Icon */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 flex items-center justify-center bg-[#F40064] rounded-lg shadow-md">
+              <div className="w-12 h-12 flex items-center justify-center bg-(--color-primary) rounded-lg shadow-md">
                 <FaBell className="w-6 h-6 text-white" />
               </div>
               <h2 className="text-2xl font-semibold text-black">What?</h2>
             </div>
 
             {/* Card */}
-            <div className="rounded-l-2xl border-l-4 border-[#F40064]">
+            <div className="rounded-l-2xl border-l-4 border-(--color-primary)">
               <div className="pl-6 pr-4 py-4 text-justify">
                 GOVICARE is a comprehensive agri-advisory platform designed to
                 empower farmers with modern, scientific cultivation practices.
@@ -68,14 +68,14 @@ const AccessToGoviCare = () => {
           <div>
             {/* Header with Icon */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 flex items-center justify-center bg-[#F40064] rounded-lg shadow-md">
+              <div className="w-12 h-12 flex items-center justify-center bg-(--color-primary) rounded-lg shadow-md">
                 <MdOutlineQuestionMark className="w-6 h-6 text-white" />
               </div>
               <h2 className="text-2xl font-semibold text-black">Why?</h2>
             </div>
 
             {/* Card */}
-            <div className="rounded-l-2xl border-l-4 border-[#F40064]">
+            <div className="rounded-l-2xl border-l-4 border-(--color-primary)">
               <div className="pl-6 pr-4 py-4 text-justify">
                 Many farmers still rely on traditional methods that, while
                 familiar, can limit productivity and increase post-harvest
@@ -119,14 +119,14 @@ const AccessToGoviCare = () => {
           <div>
             {/* Header with Icon */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 flex items-center justify-center bg-[#F40064] rounded-lg shadow-md">
+              <div className="w-12 h-12 flex items-center justify-center bg-(--color-primary) rounded-lg shadow-md">
                 <FaLightbulb className="w-6 h-6 text-white" />
               </div>
               <h2 className="text-2xl font-semibold text-black">How?</h2>
             </div>
 
             {/* Card */}
-            <div className="rounded-l-2xl border-l-4 border-[#F40064]">
+            <div className="rounded-l-2xl border-l-4 border-(--color-primary)">
               <ul className="pl-8 pr-6 py-4 space-y-3 text-justify list-disc">
                 <li>
                   We guide you, Farmers can share updates about their crops in
@@ -164,14 +164,14 @@ const AccessToGoviCare = () => {
           <div>
             {/* Header with Icon */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 flex items-center justify-center bg-[#F40064] rounded-lg shadow-md">
+              <div className="w-12 h-12 flex items-center justify-center bg-(--color-primary) rounded-lg shadow-md">
                 <FaTrophy className="w-6 h-6 text-white" />
               </div>
               <h2 className="text-2xl font-semibold text-black">What Gains?</h2>
             </div>
 
             {/* Card */}
-            <div className="rounded-l-2xl border-l-4 border-[#F40064]">
+            <div className="rounded-l-2xl border-l-4 border-(--color-primary)">
               <ol className="pl-8 pr-6 py-4 space-y-4 text-justify list-decimal ">
                 <li>Farmers achieve higher yields and healthier crops.</li>
                 <li>Post-harvest losses are minimized.</li>

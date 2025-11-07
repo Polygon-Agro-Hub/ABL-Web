@@ -9,7 +9,7 @@ const AccessToGoviCapital = () => {
 
         <button
           className="flex items-center gap-2 my-8 px-8 py-2 font-medium rounded-full transition-colors duration-300 
-             hover:bg-[#F12672] hover:text-white border border-[#F40064] text-[#F40064] bg-white"
+             hover:bg-[#F12672] hover:text-white border border-(--color-primary) text-(--color-primary) bg-white"
         >
           Open GoViMart
           <svg

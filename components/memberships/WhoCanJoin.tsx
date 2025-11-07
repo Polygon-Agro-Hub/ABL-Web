@@ -7,7 +7,7 @@ const WhoCanJoin = () => {
       title: "Farmers",
       text: "Register your farm or join a farmer group to gain access to markets, training, and financial tools that help your business grow.",
       footer: (
-        <p className="mt-4 text-[#F40064]">
+        <p className="mt-4 text-(--color-primary)">
           Contact Us :{" "}
           <span className="text-black font-medium"> +94 770 111 111</span>
         </p>
@@ -22,7 +22,7 @@ const WhoCanJoin = () => {
             href="https://govimart.lk"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#F40064] font-medium underline"
+            className="text-(--color-primary) font-medium underline"
           >
             Visit GoviMart
           </Link>
@@ -33,7 +33,7 @@ const WhoCanJoin = () => {
       title: "Supporters & Partners",
       text: "Reach out to collaborate, sponsor programs, or provide funding to empower farmers and strengthen the agricultural ecosystem.",
       footer: (
-        <p className="mt-4 text-[#F40064]">
+        <p className="mt-4 text-(--color-primary)">
           Contact Us :{" "}
           <span className="text-black font-medium"> +94 770 111 111</span>
         </p>
@@ -50,7 +50,7 @@ const WhoCanJoin = () => {
         </h1>
 
         {/* First Row: 2 Cards */}
-        <div className="grid md:grid-cols-2 gap-8 mb-10 px-6 sm:px-0">
+        <div className="grid md:grid-cols-2 gap-8 mb-10 px-6 lg:px-0">
           {values.slice(0, 2).map((item, index) => (
             <div
               key={index}

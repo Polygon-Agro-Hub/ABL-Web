@@ -24,7 +24,7 @@ const OurServices = () => {
       <section className="flex flex-col items-center text-center mt-10 sm:mt-16 px-6">
         <h1 className="text-4xl text-black font-medium mb-12">Our Services</h1>
 
-        <div className="max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-20 w-full">
+        <div className="max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-20 w-full">
           {services.map((service, index) => (
             <div
               key={index}
