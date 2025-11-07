@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #EF005A;
+  --color-primary: #F40064;
   --color-secondary: #919EA8;
 }
 
 .text-primary {
-  color: #EF005A;
+  color: #F40064;
 }
 
 .bg-primary {
-  background-color: #EF005A;
+  background-color: #F40064;
 }
 
 .border-primary {
-  border-color: #EF005A;
+  border-color: #F40064;
 }
 
 .hover\:text-primary:hover {
-  color: #EF005A;
+  color: #F40064;
 }
 
 .hover\:bg-primary:hover {
-  background-color: #EF005A;
+  background-color: #F40064;
 }

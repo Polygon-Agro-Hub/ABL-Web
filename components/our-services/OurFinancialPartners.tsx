@@ -44,7 +44,7 @@ const OurFinancialPartners = () => {
         <h2 className="text-3xl sm:text-4xl font-semibold text-black mb-3">
           Our Financial Partners
         </h2>
-        <div className="w-56 h-1 bg-[#F40064] mx-auto mb-6"></div>
+        <div className="w-56 h-1 bg-(--color-primary) mx-auto mb-6"></div>
 
         {/* Description */}
         <p className="mx-auto mb-16 leading-relaxed">
