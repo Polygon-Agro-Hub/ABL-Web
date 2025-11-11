@@ -35,10 +35,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: FaFacebookF, href: "https://facebook.com", label: "Facebook" },
-    { icon: FaTwitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: FaInstagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: FaLinkedinIn, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: FaFacebookF, href: "https://www.facebook.com/profile.php?id=61582676188251", label: "Facebook" },
+    { icon: FaTwitter, href: "https://www.tiktok.com/@govimart", label: "Twitter" },
+    { icon: FaInstagram, href: "https://www.instagram.com/govimart", label: "Instagram" },
+    { icon: FaLinkedinIn, href: "https://www.youtube.com/@GovimartSriLanka", label: "LinkedIn" },
     { icon: FaTelegramPlane, href: "https://telegram.com", label: "Telegram" },
   ];
 
