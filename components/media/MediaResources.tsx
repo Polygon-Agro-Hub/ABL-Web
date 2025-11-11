@@ -173,13 +173,13 @@ const MediaResources = () => {
           <div className="absolute bottom-[-70px] left-1/2 transform -translate-x-1/2 flex gap-8">
             <button
               onClick={prevSlide}
-              className="w-10 h-10 flex items-center justify-center rounded-full border border-black text-black hover:bg-gray-200 transition"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-black text-black hover:bg-[#BCBCBC]/80 transition cursor-pointer"
             >
               <FaChevronLeft />
             </button>
             <button
               onClick={nextSlide}
-              className="w-10 h-10 flex items-center justify-center rounded-full border border-black text-black hover:bg-gray-200 transition"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-black text-black hover:bg-[#BCBCBC]/80 transition cursor-pointer"
             >
               <FaChevronRight />
             </button>

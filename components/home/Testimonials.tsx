@@ -49,7 +49,7 @@ const Testimonials = () => {
   return (
     <section className="bg-[#F6F8FD] py-10">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <p className="text-pink-500 font-bold mb-2">Customer Feedback</p>
+        <p className="text-(--color-primary) font-bold mb-2">Customer Feedback</p>
         <h2 className="text-3xl sm:text-4xl font-semibold text-black mb-12">
           What Our Customers Say About Us
         </h2>
@@ -66,10 +66,10 @@ const Testimonials = () => {
                 alt={item.name}
                 className="w-20 h-20 rounded-full mb-4 object-cover"
               />
-              <h3 className="text-lg font-semibold text-gray-900">
+              <h3 className="text-lg font-semibold text-[#0F1125]">
                 {item.name}
               </h3>
-              <p className="text-sm text-gray-500">{item.role}</p>
+              <p className="text-sm text-[#717276]">{item.role}</p>
 
               <hr className="my-4 border border-[#E9EFF5] w-full" />
               <p className="text-[#0F1125] text-base mb-6">{item.feedback}</p>

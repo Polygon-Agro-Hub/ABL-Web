@@ -105,7 +105,7 @@ const Header = () => {
 
       {/* SUB HEADER (Desktop + LG View) */}
       <div
-        className={`fixed top-[70px] left-0 right-0 bg-[#F6F8FD] border-t border-gray-200 shadow-sm z-40 transition-all duration-500 hidden lg:block ${
+        className={`fixed top-[70px] left-0 right-0 bg-[#F6F8FD] shadow-sm z-40 transition-all duration-500 hidden lg:block ${
           showSubHeader
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-10 pointer-events-none"
@@ -115,7 +115,7 @@ const Header = () => {
           {/* Back Button */}
           <button
             onClick={handleToggleMenu}
-            className="flex items-center gap-1 text-gray-700 hover:text-(--color-primary) transition"
+            className="flex items-center gap-1 text-black hover:text-(--color-primary) transition"
           >
             <FaChevronLeft size={14} />
           </button>
@@ -160,7 +160,7 @@ const Header = () => {
               className={`font-medium transition-colors py-2 px-4 rounded-lg ${
                 isActive(item.href)
                   ? "text-(--color-primary) border-l-4 border-(--color-primary)"
-                  : "text-[#737F88] hover:bg-gray-50 hover:text-(--color-primary)"
+                  : "text-[#737F88] hover:bg-[#ECF0FB] hover:text-(--color-primary)"
               }`}
               onClick={() => handleToggleMenu()}
             >
@@ -169,7 +169,7 @@ const Header = () => {
           ))}
 
           {/* Divider */}
-          <hr className="my-3 border-gray-200" />
+          <hr className="my-3 border-[#ECF0FB]" />
 
           {/* Sub Navigation */}
           {subNavigation.map((item) => (
@@ -179,7 +179,7 @@ const Header = () => {
               className={`font-medium transition-colors py-2 px-4 rounded-lg ${
                 isActive(item.href)
                   ? "text-(--color-primary) border-l-4 border-(--color-primary)"
-                  : "text-[#737F88] hover:bg-gray-50 hover:text-(--color-primary)"
+                  : "text-[#737F88] hover:bg-[#ECF0FB] hover:text-(--color-primary)"
               }`}
               onClick={() => handleToggleMenu()}
             >

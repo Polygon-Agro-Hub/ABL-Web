@@ -23,7 +23,8 @@ export async function POST(request: Request) {
     if (
       !process.env.SMTP_HOST ||
       !process.env.SMTP_USER ||
-      !process.env.SMTP_PASS
+      !process.env.SMTP_PASS ||
+      !process.env.CONTACT_RECIPIENT_EMAIL
     ) {
       console.error("Missing SMTP environment variables");
       return new Response(
@@ -56,7 +57,7 @@ export async function POST(request: Request) {
     const mailOptions = {
       from: `"Agro Benefit Lanka Contact" <${process.env.SMTP_USER}>`,
       replyTo: email,
-      to: "avishk.work@gmail.com",
+      to: process.env.CONTACT_RECIPIENT_EMAIL,
       subject: `New Contact Form Submission from ${firstName} ${lastName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
