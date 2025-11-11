@@ -1,13 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/public/logo.png";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-  FaTelegramPlane,
-} from "react-icons/fa";
+import { FaFacebookF, FaTiktok, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   const quickLinks = [
@@ -35,11 +29,26 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: FaFacebookF, href: "https://facebook.com", label: "Facebook" },
-    { icon: FaTwitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: FaInstagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: FaLinkedinIn, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: FaTelegramPlane, href: "https://telegram.com", label: "Telegram" },
+    {
+      icon: FaFacebookF,
+      href: "https://www.facebook.com/profile.php?id=61582676188251",
+      label: "Facebook",
+    },
+    {
+      icon: FaTiktok,
+      href: "https://www.tiktok.com/@govimart",
+      label: "Tiktok",
+    },
+    {
+      icon: FaYoutube,
+      href: "https://www.youtube.com/@GovimartSriLanka",
+      label: "LinkedIn",
+    },
+    {
+      icon: FaInstagram,
+      href: "https://www.instagram.com/govimart",
+      label: "Instagram",
+    },
   ];
 
   return (

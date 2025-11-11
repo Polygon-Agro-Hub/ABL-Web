@@ -17,7 +17,7 @@ const MutualImpact = () => {
         <div className="w-28 h-1 bg-(--color-primary) mx-auto mb-10 rounded-full"></div>
 
         {/* List */}
-        <ul className="space-y-6 text-left text-gray-700">
+        <ul className="space-y-6 text-left text-black">
           {points.map((point, index) => (
             <li key={index} className="flex items-start gap-3">
               <FaCheck className="text-(--color-primary) mt-1 text-2xl" />

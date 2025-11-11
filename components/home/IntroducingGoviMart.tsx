@@ -81,7 +81,7 @@ const IntroducingGoviMart = () => {
               Our Targets:
             </h2>
 
-            <ul className="space-y-4 text-left text-gray-700">
+            <ul className="space-y-4 text-left text-black">
               {points.map((point, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <FaCheck className="text-(--color-primary) mt-1 text-xl" />
@@ -101,7 +101,7 @@ const IntroducingGoviMart = () => {
             01. Access to Market - GoViMart
           </h2>
 
-          <ul className="space-y-4 text-left text-gray-700">
+          <ul className="space-y-4 text-left text-black">
             {marketPoints.map((point, index) => (
               <li key={index} className="flex items-start gap-3">
                 <FaCheck className="text-(--color-primary) mt-1 text-xl" />
@@ -134,7 +134,7 @@ const IntroducingGoviMart = () => {
             02. Access to Finance - GoViCapital
           </h2>
 
-          <ul className="space-y-4 text-left text-gray-700">
+          <ul className="space-y-4 text-left text-black">
             {financePoints.map((point, index) => (
               <li key={index} className="flex items-start gap-3">
                 <FaCheck className="text-(--color-primary) mt-1 text-xl" />
@@ -167,7 +167,7 @@ const IntroducingGoviMart = () => {
             03. Access to Scientific Growing Methods
           </h2>
 
-          <ul className="space-y-4 text-left text-gray-700">
+          <ul className="space-y-4 text-left text-black">
             {scientificPoints.map((point, index) => (
               <li key={index} className="flex items-start gap-3">
                 <FaCheck className="text-(--color-primary) mt-1 text-xl" />

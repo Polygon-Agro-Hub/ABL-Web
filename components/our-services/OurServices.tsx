@@ -43,7 +43,7 @@ const OurServices = () => {
 
               {/* Name with HTML break */}
               <h3
-                className="text-2xl font-semibold mb-6 text-gray-900"
+                className="text-2xl font-semibold mb-6 text-black"
                 dangerouslySetInnerHTML={{ __html: service.name }}
               ></h3>
 

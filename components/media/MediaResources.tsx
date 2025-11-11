@@ -113,15 +113,13 @@ const MediaResources = () => {
   return (
     <section className="min-h-screen">
       <div className="mx-auto text-center">
-        <div className="bg-[#F6F8FD]">
+        <div className="bg-[#F6F8FD] py-16 px-6">
           {/* Title */}
-          <h2 className="text-3xl font-semibold text-black mb-12 py-10">
-            Media & Resources
-          </h2>
+          <h1 className="text-4xl text-black font-medium">Media & Resources</h1>
         </div>
 
         {/* Slider Container */}
-        <div className="relative flex items-center justify-center px-4">
+        <div className="relative flex items-center justify-center px-4 pt-12">
           <div className="relative w-full flex items-center justify-center h-60 md:h-[400px]">
             {images.map((img, i) => {
               const offset = (i - index + images.length) % images.length;
@@ -175,13 +173,13 @@ const MediaResources = () => {
           <div className="absolute bottom-[-70px] left-1/2 transform -translate-x-1/2 flex gap-8">
             <button
               onClick={prevSlide}
-              className="w-10 h-10 flex items-center justify-center rounded-full border border-black text-black hover:bg-gray-200 transition"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-black text-black hover:bg-[#BCBCBC]/80 transition cursor-pointer"
             >
               <FaChevronLeft />
             </button>
             <button
               onClick={nextSlide}
-              className="w-10 h-10 flex items-center justify-center rounded-full border border-black text-black hover:bg-gray-200 transition"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-black text-black hover:bg-[#BCBCBC]/80 transition cursor-pointer"
             >
               <FaChevronRight />
             </button>
