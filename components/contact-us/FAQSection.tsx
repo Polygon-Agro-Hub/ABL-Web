@@ -45,7 +45,7 @@ const FAQSection = () => {
         <h1 className="text-4xl text-black font-medium">
           Frequently Asked Questions
         </h1>
-        <p className="text-gray-600 mt-2 text-lg">
+        <p className="text-black mt-2 text-lg">
           Got{" "}
           <span className="text-(--color-primary) font-semibold">
             Questions?
@@ -69,7 +69,7 @@ const FAQSection = () => {
               onClick={() => toggleFAQ(index)}
               className="w-full flex justify-between items-center px-6 py-4 text-left"
             >
-              <span className="font-semibold text-gray-900 text-base md:text-lg">
+              <span className="font-semibold text-black text-base md:text-lg">
                 {faq.question}
               </span>
               {openIndex === index ? (
@@ -80,7 +80,7 @@ const FAQSection = () => {
             </button>
 
             {openIndex === index && (
-              <div className="px-6 pb-5 text-gray-600 text-sm md:text-base">
+              <div className="px-6 pb-5 text-black text-sm md:text-base">
                 {faq.answer}
               </div>
             )}

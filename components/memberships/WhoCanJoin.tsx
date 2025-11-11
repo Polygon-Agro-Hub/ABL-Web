@@ -58,7 +58,7 @@ const WhoCanJoin = () => {
               style={{ borderBottomRightRadius: "80px" }}
             >
               <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-              <p className="text-gray-700 text-base leading-relaxed">
+              <p className="text-[#53595E] text-base leading-relaxed">
                 {item.text}
               </p>
               {item.footer}
@@ -75,7 +75,7 @@ const WhoCanJoin = () => {
               style={{ borderBottomRightRadius: "80px" }}
             >
               <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-              <p className="text-gray-700 text-base leading-relaxed">
+              <p className="text-[#53595E] text-base leading-relaxed">
                 {item.text}
               </p>
               {item.footer}

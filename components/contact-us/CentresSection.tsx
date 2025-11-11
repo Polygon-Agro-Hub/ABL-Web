@@ -74,7 +74,7 @@ export default function CentresSection() {
                 >
                   <p className="text-lg font-medium text-black">{loc.town}</p>
                   <p
-                    className="text-sm text-gray-600 leading-relaxed"
+                    className="text-sm text-[#3F3F3F] leading-relaxed"
                     dangerouslySetInnerHTML={{ __html: loc.address }}
                   />
                 </div>

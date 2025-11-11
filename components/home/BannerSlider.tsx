@@ -44,7 +44,7 @@ const BannerSlider = () => {
       {/* Left Button */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 -translate-y-1/2 border bg-[#BCBCBC]/30 border-[#BCBCBC]/90 hover:bg-[#BCBCBC]/80 text-gray-700 p-3 rounded-full shadow-md transition-all duration-300 hover:scale-110 animate-[swing_3s_infinite]"
+        className="absolute top-1/2 left-4 -translate-y-1/2 border bg-[#BCBCBC]/30 border-[#BCBCBC]/90 hover:bg-[#BCBCBC]/80 p-3 rounded-full shadow-md transition-all duration-300 hover:scale-110 animate-[swing_3s_infinite]"
         aria-label="Previous"
       >
         <FaChevronLeft size={20} className="text-[#2F2F2F]" />
@@ -53,7 +53,7 @@ const BannerSlider = () => {
       {/* Right Button */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 -translate-y-1/2 border bg-[#BCBCBC]/30 border-[#BCBCBC]/90 hover:bg-[#BCBCBC]/80 text-gray-700 p-3 rounded-full shadow-md transition-all duration-300 hover:scale-110 animate-[swing_3s_infinite]"
+        className="absolute top-1/2 right-4 -translate-y-1/2 border bg-[#BCBCBC]/30 border-[#BCBCBC]/90 hover:bg-[#BCBCBC]/80 p-3 rounded-full shadow-md transition-all duration-300 hover:scale-110 animate-[swing_3s_infinite]"
         aria-label="Next"
       >
         <FaChevronRight size={20} className="text-[#2F2F2F]" />

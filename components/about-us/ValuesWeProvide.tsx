@@ -50,7 +50,7 @@ const ValuesWeProvide = () => {
               <h3 className="text-xl font-semibold mb-3 text-center">
                 {item.title}
               </h3>
-              <p className="text-gray-700 text-base leading-relaxed text-center px-8">
+              <p className="text-[#53595E] text-base leading-relaxed text-center px-8">
                 {item.text}
               </p>
             </div>
@@ -70,7 +70,7 @@ const ValuesWeProvide = () => {
               <h3 className="text-xl font-semibold mb-3 text-center">
                 {item.title}
               </h3>
-              <p className="text-gray-700 text-base leading-relaxed text-center px-8">
+              <p className="text-[#53595E] text-base leading-relaxed text-center px-8">
                 {item.text}
               </p>
             </div>

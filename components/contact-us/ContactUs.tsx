@@ -78,7 +78,7 @@ const ContactUs = () => {
                     <FaPhoneAlt className="text-white text-lg md:text-xl w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-xs md:text-sm font-medium text-gray-600">
+                    <p className="text-xs md:text-sm font-medium">
                       Hotline :
                     </p>
                     <p className="text-black font-semibold text-sm md:text-base">
@@ -92,7 +92,7 @@ const ContactUs = () => {
                     <MdEmail className="text-white text-lg md:text-xl w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-xs md:text-sm font-medium text-gray-600">
+                    <p className="text-xs md:text-sm font-medium">
                       Email :
                     </p>
                     <p className="text-black font-semibold text-sm md:text-base">
@@ -106,7 +106,7 @@ const ContactUs = () => {
                     <MdLocationOn className="text-white text-lg md:text-xl w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-xs md:text-sm font-medium text-gray-600">
+                    <p className="text-xs md:text-sm font-medium">
                       Address :
                     </p>
                     <p className="text-black font-semibold text-sm md:text-base">
@@ -153,7 +153,7 @@ const ContactUs = () => {
               </div>
             </div>
             {/* Right: Contact Form */}
-            <div className="relative border border-gray-200 rounded-2xl p-4 md:p-6 lg:p-8 shadow-md overflow-hidden">
+            <div className="relative border border-[#B6BDD2] rounded-2xl p-4 md:p-6 lg:p-8 shadow-md overflow-hidden">
               <form
                 onSubmit={handleSubmit}
                 className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 relative z-10"

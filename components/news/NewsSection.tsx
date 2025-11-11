@@ -65,7 +65,7 @@ const NewsSection = () => {
             <div className="lg:col-span-2">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                 {/* News Image */}
-                <div className="relative h-80 w-full bg-gray-200 mb-6">
+                <div className="relative h-80 w-full mb-6">
                   <Image
                     src={selectedNewsItem.image}
                     alt={selectedNewsItem.title}
@@ -110,7 +110,7 @@ const NewsSection = () => {
                       onClick={() => setSelectedNews(news.id)}
                     >
                       {/* News Image */}
-                      <div className="relative h-48 w-full bg-gray-200">
+                      <div className="relative h-48 w-full">
                         <Image
                           src={news.image}
                           alt={news.title}
@@ -127,7 +127,7 @@ const NewsSection = () => {
                         </h3>
 
                         {/* Description */}
-                        <p className="text-gray-600 leading-relaxed mb-4 line-clamp-3">
+                        <p className="text-[#5F5F5F] leading-relaxed mb-4 line-clamp-3">
                           {truncateDescription(news.description, 20)}
                         </p>
                       </div>
@@ -178,7 +178,7 @@ const NewsSection = () => {
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-[#ECECEF]"
             >
               {/* News Image */}
-              <div className="relative h-48 w-full bg-gray-200">
+              <div className="relative h-48 w-full">
                 <Image
                   src={news.image}
                   alt={news.title}
@@ -195,7 +195,7 @@ const NewsSection = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 leading-relaxed mb-4 line-clamp-3">
+                <p className="text-[#5F5F5F] leading-relaxed mb-4 line-clamp-3">
                   {truncateDescription(news.description, 20)}
                 </p>
               </div>

@@ -54,7 +54,7 @@ const OurManagementTeam = () => {
               {/* Details */}
               <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">{member.name}</h3>
-                <p className="text-gray-600">{member.role}</p>
+                <p className="text-black">{member.role}</p>
               </div>
             </div>
           ))}
