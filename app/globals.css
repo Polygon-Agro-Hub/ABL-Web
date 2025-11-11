@@ -24,3 +24,8 @@
 .hover\:bg-primary:hover {
   background-color: #F40064;
 }
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}

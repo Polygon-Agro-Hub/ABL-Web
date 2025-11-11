@@ -20,7 +20,7 @@ const Header = () => {
     { name: "Projects", href: "/projects" },
     { name: "Memberships", href: "/memberships" },
     { name: "Sustainability", href: "/sustainability" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "Contact Us", href: "/contact-us" },
   ];
 
   const subNavigation = [
