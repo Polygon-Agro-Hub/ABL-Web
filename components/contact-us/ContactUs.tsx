@@ -2,18 +2,51 @@
 
 import Image from "next/image";
 import {
-  FaPhone,
-  FaEnvelope,
-  FaMapMarkerAlt,
+  FaPhoneAlt,
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
-  FaLinkedinIn,
-  FaTelegramPlane,
+  FaTiktok,
+  FaYoutube,
 } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { MdLocationOn } from "react-icons/md";
+
 import bgShape from "@/assets/contact-us/leaf.png";
 
 const ContactUs = () => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+
+    const firstName = (form.elements[0] as HTMLInputElement).value;
+    const lastName = (form.elements[1] as HTMLInputElement).value;
+    const phone = (form.elements[2] as HTMLInputElement).value;
+    const company = (form.elements[3] as HTMLInputElement).value;
+    const email = (form.elements[4] as HTMLInputElement).value;
+    const message = (form.elements[5] as HTMLTextAreaElement).value;
+
+    const formData = { firstName, lastName, phone, company, email, message };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        alert("Message sent successfully!");
+        form.reset();
+      } else {
+        alert("Failed to send message.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("An error occurred. Please try again.");
+    }
+  };
+
   return (
     <section>
       <div className="mx-auto text-center">
@@ -40,8 +73,10 @@ const ContactUs = () => {
 
               {/* Contact Info */}
               <div className="space-y-3 md:space-y-4">
-                <div className="flex items-center gap-3 md:gap-4 bg-white border border-gray-200 rounded-lg px-3 md:px-4 py-3 shadow-sm">
-                  <FaPhone className="text-(--color-primary) text-lg md:text-xl" />
+                <div className="flex items-center gap-3 md:gap-4 bg-white border border-[#D5D8E4] rounded-lg px-3 md:px-4 py-3 shadow-sm">
+                  <div className="bg-black p-2 rounded-lg">
+                    <FaPhoneAlt className="text-white text-lg md:text-xl w-6 h-6" />
+                  </div>
                   <div>
                     <p className="text-xs md:text-sm font-medium text-gray-600">
                       Hotline :
@@ -52,8 +87,10 @@ const ContactUs = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 md:gap-4 bg-white border border-gray-200 rounded-lg px-3 md:px-4 py-3 shadow-sm">
-                  <FaEnvelope className="text-(--color-primary) text-lg md:text-xl" />
+                <div className="flex items-center gap-3 md:gap-4 bg-white border border-[#D5D8E4] rounded-lg px-3 md:px-4 py-3 shadow-sm">
+                  <div className="bg-black p-2 rounded-lg">
+                    <MdEmail className="text-white text-lg md:text-xl w-6 h-6" />
+                  </div>
                   <div>
                     <p className="text-xs md:text-sm font-medium text-gray-600">
                       Email :
@@ -64,8 +101,10 @@ const ContactUs = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 md:gap-4 bg-white border border-gray-200 rounded-lg px-3 md:px-4 py-3 shadow-sm">
-                  <FaMapMarkerAlt className="text-(--color-primary) text-lg md:text-xl" />
+                <div className="flex items-center gap-3 md:gap-4 bg-white border border-[#D5D8E4] rounded-lg px-3 md:px-4 py-3 shadow-sm">
+                  <div className="bg-black p-2 rounded-lg">
+                    <MdLocationOn className="text-white text-lg md:text-xl w-6 h-6" />
+                  </div>
                   <div>
                     <p className="text-xs md:text-sm font-medium text-gray-600">
                       Address :
@@ -88,42 +127,37 @@ const ContactUs = () => {
                   <FaFacebookF />
                 </a>
                 <a
+                  href="https://www.tiktok.com/@govimart"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-[#0F182A] text-white hover:bg-[#00F0FF] transition text-sm md:text-base"
+                >
+                  <FaTiktok />
+                </a>
+                <a
+                  href="https://www.youtube.com/@GovimartSriLanka"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-[#0F182A] text-white hover:bg-[#FF0000] transition text-sm md:text-base"
+                >
+                  <FaYoutube />
+                </a>
+                <a
                   href="https://www.instagram.com/govimart"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-[#0F182A] text-white hover:bg-[#833AB4] transition text-sm md:text-base"
+                  className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-[#0F182A] text-white hover:bg-[#DD2A7B] transition text-sm md:text-base"
                 >
                   <FaInstagram />
-                </a>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-[#0F182A] text-white hover:bg-[#1DA1F2] transition text-sm md:text-base"
-                >
-                  <FaTwitter />
-                </a>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-[#0F182A] text-white hover:bg-[#0A66C2] transition text-sm md:text-base"
-                >
-                  <FaLinkedinIn />
-                </a>
-                <a
-                  href="https://t.me"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-[#0F182A] text-white hover:bg-[#0088CC] transition text-sm md:text-base"
-                >
-                  <FaTelegramPlane />
                 </a>
               </div>
             </div>
             {/* Right: Contact Form */}
             <div className="relative border border-gray-200 rounded-2xl p-4 md:p-6 lg:p-8 shadow-md overflow-hidden">
-              <form className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 relative z-10">
+              <form
+                onSubmit={handleSubmit}
+                className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 relative z-10"
+              >
                 <input
                   type="text"
                   placeholder="First Name"
@@ -135,7 +169,7 @@ const ContactUs = () => {
                   className="border border-[#77809D] rounded-full px-4 py-3 md:py-4 focus:outline-none focus:border-(--color-primary) text-sm md:text-base"
                 />
                 <input
-                  type="text"
+                  type="number"
                   placeholder="Phone Number"
                   className="border border-[#77809D] rounded-full px-4 py-3 md:py-4 focus:outline-none focus:border-(--color-primary) text-sm md:text-base"
                 />
