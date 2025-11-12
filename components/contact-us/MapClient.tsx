@@ -4,18 +4,15 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 
-import iconUrl from "leaflet/dist/images/marker-icon.png";
-import iconShadow from "leaflet/dist/images/marker-shadow.png";
-
 L.Marker.prototype.options.icon = L.icon({
-  iconUrl,
-  shadowUrl: iconShadow,
+  iconUrl: require("leaflet/dist/images/marker-icon.png") as string,
+  shadowUrl: require("leaflet/dist/images/marker-shadow.png") as string,
   iconSize: [25, 41],
   iconAnchor: [12, 41],
 });
 
 interface MapClientProps {
-  locations: { town: string; address: string; position: [number, number] }[];
+  locations: { town: string; address: string; position: [number,  number] }[];
 }
 
 export default function MapClient({ locations }: MapClientProps) {
