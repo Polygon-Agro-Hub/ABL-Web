@@ -8,7 +8,7 @@ const FeedingNation = () => {
         <h2 className="text-3xl sm:text-4xl font-semibold text-black mb-3">
           Empowering Farmers, Feeding the Nation
         </h2>
-        <div className="max-w-3xl h-1 bg-(--color-primary) mx-auto mb-6"></div>
+        <div className="lg:w-[700px] h-1 bg-(--color-primary) mx-auto mb-6 "></div>
 
         {/* Description */}
         <p className="mx-auto mb-6 leading-relaxed text-[#53595E] max-w-7xl">

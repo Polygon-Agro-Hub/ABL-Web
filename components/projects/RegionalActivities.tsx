@@ -6,6 +6,12 @@ const RegionalActivities = () => {
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto">
         {/* Top Image + Paragraph */}
+        <div className="flex items-center justify-end gap-3 mb-4">
+          <h2 className="text-3xl font-semibold text-black">
+            Regional Activities
+          </h2>
+          <div className="w-1 h-10 bg-(--color-primary) rounded-full"></div>
+        </div>
         <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
           {/* Image */}
           <div className="w-full md:w-1/3 flex justify-center">
@@ -18,13 +24,6 @@ const RegionalActivities = () => {
 
           {/* Text */}
           <div className="w-full md:w-2/3 text-[#353535] text-justify leading-relaxed">
-            <div className="flex items-center justify-end gap-3 mb-4">
-              <h2 className="text-3xl font-semibold text-black">
-                Regional Activities
-              </h2>
-              <div className="w-1 h-10 bg-(--color-primary) rounded-full"></div>
-            </div>
-
             <p>
               At Agro Benefit Lanka (ABL), our regional initiatives are designed
               to empower farmers, strengthen communities, and create a
