@@ -29,14 +29,29 @@ const BannerSlider = () => {
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {banners.map((banner, i) => (
-          <div key={i} className="min-w-full relative h-[60vh] sm:h-[80vh]">
-            <Image
-              src={banner}
-              alt={`Banner ${i + 1}`}
-              fill
-              className="object-cover"
-              priority={i === 0}
-            />
+          <div key={i} className="min-w-full relative">
+            {/* Mobile & Tablet View - Full Original Image Height */}
+            <div className="block lg:hidden relative w-full">
+              <Image
+                src={banner}
+                alt={`Banner ${i + 1}`}
+                width={800}
+                height={600}
+                className="w-full h-auto object-contain"
+                priority={i === 0}
+              />
+            </div>
+
+            {/* Desktop View - Fixed Height */}
+            <div className="hidden lg:block relative h-[60vh] xl:h-[80vh]">
+              <Image
+                src={banner}
+                alt={`Banner ${i + 1}`}
+                fill
+                className="object-cover"
+                priority={i === 0}
+              />
+            </div>
           </div>
         ))}
       </div>
@@ -44,28 +59,28 @@ const BannerSlider = () => {
       {/* Left Button */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 cursor-pointer -translate-y-1/2 border bg-[#BCBCBC]/30 border-[#BCBCBC]/90 hover:bg-[#BCBCBC]/80 p-3 rounded-full shadow-md transition-all duration-300 hover:scale-110 animate-[swing_3s_infinite]"
+        className="absolute top-1/2 left-2 cursor-pointer -translate-y-1/2 border bg-[#BCBCBC]/30 border-[#BCBCBC]/90 hover:bg-[#BCBCBC]/80 p-2 rounded-full shadow-md transition-all duration-300 hover:scale-110 animate-[swing_3s_infinite]"
         aria-label="Previous"
       >
-        <FaChevronLeft size={20} className="text-[#2F2F2F]" />
+        <FaChevronLeft size={16} className="text-[#2F2F2F]" />
       </button>
 
       {/* Right Button */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 cursor-pointer -translate-y-1/2 border bg-[#BCBCBC]/30 border-[#BCBCBC]/90 hover:bg-[#BCBCBC]/80 p-3 rounded-full shadow-md transition-all duration-300 hover:scale-110 animate-[swing_3s_infinite]"
+        className="absolute top-1/2 right-2 cursor-pointer -translate-y-1/2 border bg-[#BCBCBC]/30 border-[#BCBCBC]/90 hover:bg-[#BCBCBC]/80 p-2 rounded-full shadow-md transition-all duration-300 hover:scale-110 animate-[swing_3s_infinite]"
         aria-label="Next"
       >
-        <FaChevronRight size={20} className="text-[#2F2F2F]" />
+        <FaChevronRight size={16} className="text-[#2F2F2F]" />
       </button>
 
       {/* Dots Indicator */}
-      <div className="absolute bottom-6 w-full flex justify-center gap-3">
+      <div className="absolute bottom-4 w-full flex justify-center gap-2">
         {banners.map((_, i) => (
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
               i === current ? "bg-[#BCC2D1]" : "bg-[#E8EAF1]"
             }`}
           />

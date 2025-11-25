@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { useState } from "react";
@@ -172,7 +173,13 @@ const ContactUs = () => {
                   </div>
                   <div>
                     <p className="text-xs md:text-sm font-medium">Hotline :</p>
-                    <p className="text-black font-semibold text-sm md:text-base">
+                    {/* Mobile View – 2 lines, NO "|" */}
+                    <div className="block md:hidden text-black font-semibold text-sm">
+                      <p>(+94) 770 111 111</p>
+                      <p>(+94) 770 111 112</p>
+                    </div>
+                    {/* Desktop/Tablet – 1 line WITH "|" */}
+                    <p className="hidden md:block text-black font-semibold text-base">
                       (+94) 770 111 111 &nbsp; | &nbsp; (+94) 770 111 112
                     </p>
                   </div>
@@ -244,7 +251,7 @@ const ContactUs = () => {
             <div className="relative border border-[#B6BDD2] rounded-2xl p-4 md:p-6 lg:p-8 shadow-md overflow-hidden">
               <form
                 onSubmit={handleSubmit}
-                className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 relative z-10"
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 md:gap-4 relative z-10"
               >
                 <input
                   type="text"
@@ -272,15 +279,15 @@ const ContactUs = () => {
                   type="email"
                   placeholder="Email Address"
                   required
-                  className="col-span-2 border border-[#77809D] rounded-full px-4 py-3 md:py-4 focus:outline-none focus:border-(--color-primary) text-sm md:text-base"
+                  className="col-span-1 md:col-span-2 border border-[#77809D] rounded-full px-4 py-3 md:py-4 focus:outline-none focus:border-(--color-primary) text-sm md:text-base"
                 />
                 <textarea
                   placeholder="Message"
                   rows={4}
                   required
-                  className="col-span-2 border border-[#77809D] rounded-2xl px-4 py-3 md:py-4 focus:outline-none focus:border-(--color-primary) text-sm md:text-base"
+                  className="col-span-1 md:col-span-2 border border-[#77809D] rounded-2xl px-4 py-3 md:py-4 focus:outline-none focus:border-(--color-primary) text-sm md:text-base"
                 />
-                <div className="col-span-2 flex justify-center mt-3 md:mt-4">
+                <div className="col-span-1 md:col-span-2 flex justify-center mt-3 md:mt-4">
                   <button
                     type="submit"
                     disabled={isSubmitting}

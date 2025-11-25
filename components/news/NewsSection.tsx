@@ -5,8 +5,6 @@ import { newsData } from "@/data/news-data";
 import Image from "next/image";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 
-import { FaCalendarAlt, FaArrowLeft } from "react-icons/fa";
-
 const NewsSection = () => {
   const [selectedNews, setSelectedNews] = useState<number | null>(null);
 
@@ -26,6 +24,26 @@ const NewsSection = () => {
       year: "numeric",
       month: "long",
       day: "numeric",
+    });
+  };
+
+  // Function to handle news selection with scroll to top
+  const handleSelectNews = (newsId: number) => {
+    setSelectedNews(newsId);
+    // Scroll to top of the page smoothly
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  // Function to handle going back to all news with scroll to top
+  const handleGoBack = () => {
+    setSelectedNews(null);
+    // Scroll to top of the page smoothly
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
     });
   };
 
@@ -52,7 +70,7 @@ const NewsSection = () => {
           {/* Go Back Button */}
           <div className="mb-8">
             <button
-              onClick={() => setSelectedNews(null)}
+              onClick={handleGoBack}
               className="flex items-center gap-2 text-black hover:text-(--color-primary) font-semibold transition-colors group mb-6 underline cursor-pointer"
             >
               <MdKeyboardArrowLeft className="w-6 h-6" />
@@ -102,12 +120,12 @@ const NewsSection = () => {
             {/* Other News Sidebar - 1/3 width */}
             <div className="lg:col-span-1">
               <div className="sticky top-8">
-                <div className="space-y-6 max-h-screen overflow-y-auto pr-2">
+                <div className="space-y-6 lg:max-h-screen overflow-y-auto pr-2">
                   {otherNews.map((news) => (
                     <div
                       key={news.id}
-                      className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-[#ECECEF]"
-                      onClick={() => setSelectedNews(news.id)}
+                      className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-[#ECECEF] cursor-pointer"
+                      onClick={() => handleSelectNews(news.id)}
                     >
                       {/* News Image */}
                       <div className="relative h-48 w-full">
@@ -142,7 +160,10 @@ const NewsSection = () => {
                           </div>
                           {/* See More Button */}
                           <button
-                            onClick={() => setSelectedNews(news.id)}
+                            onClick={(e) => {
+                              e.stopPropagation(); // Prevent double trigger
+                              handleSelectNews(news.id);
+                            }}
                             className="flex items-center text-(--color-primary) font-semibold transition-colors group cursor-pointer"
                           >
                             See more
@@ -208,8 +229,8 @@ const NewsSection = () => {
                   </div>
                   {/* See More Button */}
                   <button
-                    onClick={() => setSelectedNews(news.id)}
-                    className="flex items-center text-(--color-primary) font-semibold transition-colors group  cursor-pointer"
+                    onClick={() => handleSelectNews(news.id)}
+                    className="flex items-center text-(--color-primary) font-semibold transition-colors group cursor-pointer"
                   >
                     See more
                   </button>
