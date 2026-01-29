@@ -15,11 +15,12 @@ export default function AboutUsPage() {
         <OurObjectives />
       </div>
       <ValuesWeProvide />
-      <div className="flex flex-col px-6 gap-20">
+      {/* hide for still not real world content 01/29/2026 */}
+      {/* <div className="flex flex-col px-6 gap-20">
         <OurBoardOfDirectors />
         <OurManagementTeam />
         <OurOperationalTeam />
-      </div>
+      </div> */}
     </div>
   );
 }
