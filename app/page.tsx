@@ -9,7 +9,8 @@ export default function Home() {
       <BannerSlider />
       <FeedingNation />
       <IntroducingGoviMart />
-      <Testimonials />
+      {/* hide for still not real data 01/29/2026 */}
+      {/* <Testimonials /> */}
     </div>
   );
 }
